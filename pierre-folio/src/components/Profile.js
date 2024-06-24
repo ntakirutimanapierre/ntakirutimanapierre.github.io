@@ -13,6 +13,9 @@ const Profile = () => {
         <a href="mailto:pntakiru@andrew.cmu.edu">
           <i className="fas fa-envelope"></i> Mail
         </a>
+        <a href="tel:+250781712615">
+          <i className="fas fa-phone"></i> Phone
+        </a>
         <a href="https://twitter.com/NTAKIRU85371679">
           <i className="fab fa-twitter"></i> Twitter
         </a>

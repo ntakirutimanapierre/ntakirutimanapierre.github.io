@@ -1,6 +1,7 @@
 import React from "react";
 import projectImage1 from "../Images/weather.png";
 import projectImage2 from "../Images/positions_by_state.png";
+import projectImage3 from "../Images/meeeeeee.png";
 
 const Content = ({ activePage }) => {
   return (
@@ -8,13 +9,31 @@ const Content = ({ activePage }) => {
       {activePage === "Pierre Ntakirutimana" && (
         <p className="bio">
           <h1>About</h1> <br />
-          Hello! I'm Pierre Ntakirutimana, and I'm currently on the exciting
-          journey of transitioning into you data science team. Having grown up
-          in the filed intersecting mathematics and computer engineering, and
-          having spent time in business sectors, I will bring this set of skills
-          to make the impactful move within you organization My passion for
-          understanding the power of data and its potential impact on business
-          sets me apart. If you are looking for a dedicated and motivated
+          Hello! I'm Pierre Ntakirutimana, Pierre is a research assistant at
+          Carnegie Mellon University Africa. He spends time reading and
+          analyzing data from fintech space in Sub-Saharan Africa in order to
+          develop financial strategy. Pierre has worked with researchers from
+          different world class universities, Oxford University(UK), Carnegie
+          Mellon University (USA), TU Ilmenau (Germany) and University of
+          Witwatersrand (South Africa). He is doing a master’s degree in
+          Electrical and Computer Engineering from Carnegie Mellon University
+          (USA), where he focuses on data science and applied machine learning.
+          Before joining CMU, he spent time in the Internal Consulting Team at
+          One Acre Fund where he contributed on several business strategy
+          projects. Pierre Holds a master’s degree in Mathematical Sciences from
+          African Institute for Mathematical Sciences (Rwanda), where he
+          concentrated in data science. Pierre brings in rich experience in
+          business strategies and data analytics. He enjoys measuring impacts of
+          projects and setting strategies. <br />
+          My academic background spans Computer Engineering and Mathematical
+          Science where I specialize in building models and data science. I am a
+          studet in Electrical and Computer Engineering at Carnegie Mellon
+          University where I concentrate on Data Science. I also hold a Master's
+          degree in Mathematical Sciences with a Major in Data Science and
+          Statistics from African Institute for Mathematical Sciences
+          <br />
+          I am dedicated data scientis and would love to bring my skills at your
+          organization. If you are looking for a dedicated and motivated
           individual who appreciates the strategic role of data, I would love to
           connect and discuss potential opportunities further.
           <br />
@@ -110,6 +129,9 @@ const Content = ({ activePage }) => {
       )}
       {activePage === "Experience" && (
         <p className="bio">
+          <h2>Experience</h2>
+          <br />
+          <br />
           <div class="job">
             <h3>- CARNEGIE MELLON UNIVERSITY</h3>
             <p>Kigali, Rwanda</p>
@@ -222,6 +244,22 @@ const Content = ({ activePage }) => {
           </p>
           <div className="project-image">
             <img src={projectImage2} alt="Project" />
+          </div>
+          <h4 style={{ fontWeight: 600 }}>
+            <br />
+            Project 3: Deep Analysis in Anomaly-Based Intrusion Detection and
+            Prevention
+          </h4>
+          <p className="bio" style={{ color: "grey" }}>
+            In this personal data science endeavor, I undertook a comprehensive
+            analysis of the CICIDS2017 cybersecurity dataset, delving deep into
+            the intricacies of Anomaly-Based Intrusion Detection and Prevention.
+            This project aimed to enhance my data science proficiency by
+            extracting meaningful insights from network traffic data and
+            providing valuable perspectives for cybersecurity strategies.
+          </p>
+          <div className="project-image">
+            <img src={projectImage3} alt="Project" />
           </div>
         </p>
       )}
