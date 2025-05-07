@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pierre | Machine Learning Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #004466;
+      color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 24px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 16px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0;
+    }
+
+    .sidebar {
+      width: 280px;
+      background-color: #fff;
+      padding: 30px 20px;
+      border-right: 1px solid #ddd;
+      min-height: 100vh;
+    }
+
+    .sidebar img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 20px;
+    }
+
+    .sidebar h2 {
+      font-size: 20px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .sidebar p,
+    .sidebar a {
+      font-size: 14px;
+      text-align: center;
+      display: block;
+      margin-bottom: 10px;
+      color: #0073b1;
+      text-decoration: none;
+    }
+
+    .main {
+      flex: 1;
+      padding: 40px 60px;
+      background-color: #fff;
+    }
+
+    .main h2 {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .main p {
+      font-size: 16px;
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+
+    .projects {
+      margin-top: 40px;
+    }
+
+    .projects h3 {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 1px;
+    }
+
+    .project-card {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      background-color: #f0f0f0;
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    .project-card img {
+      width: 120px;
+      height: 80px;
+      object-fit: cover;
+      margin-right: 20px;
+      border-radius: 4px;
+    }
+
+    .project-card div {
+      flex: 1;
+    }
+
+    .project-card h4 {
+      font-size: 18px;
+      margin-bottom: 6px;
+    }
+
+    .project-card p {
+      margin: 0;
+      font-size: 14px;
+    }
+    span{
+  display: flex;
+  gap: 10px; 
+  align-items: center; 
+}
+.breack down{
+  width: 80%;
+      line-height: 10px;
+      word-wrap: break-word;
+      padding: 10px;
+      border-radius: 8px;
+      font-family: sans-serif;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container2 {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+
+
+    
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.project {
+    display: flex;
+    align-items: flex-start;
+    gap: 0px;
+    margin-bottom: 0px;
+}
+
+.image img {
+    width: 50%;
+    max-width: 400px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.details {
+    flex: 1;
+}
+
+.details h2 {
+    color: #003366;
+    margin-top: 0;
+    margin-left: 0%;
+}
+
+.details p {
+    line-height: 1.3;
+    margin-bottom: 1px;
+}
+
+button {
+    background-color: #003366;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0055aa;
+}
+
+.divider {
+    height: 1px;
+    background-color: #ddd;
+    margin: 40px 0;
+}
+.m{
+  color: white;
+}
+    .footer {
+    text-align: center;
+    padding: 0px;
+    background-color: #003366;
+    color: white;
+    margin-top: 40px;
+    font-size: 30px;
+
+}
+.t{
+   word-wrap: break-word;
+
+
+  </style>
+
+
+</head>
+<body>
+  <header><nav>
+   <b> <a href="">Pierre</a></b>
+    </nav>
+    <nav>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://www.linkedin.com/">blogs</a>
+    </nav>
+  </header>
+
+  
+  <div class="container">
+    <div class="sidebar">
+      <img src="images//Profile.PNG" alt="Pierre Photo">
+      <h2>Pierre</h2> 
+      <div class="merger">
+      <p>Data Scientist & Business Analyst</p>
+      <p>Kigali, Rwanda</p>
+      <a href="https://www.linkedin.com/">LinkedIn</a>
+      <a href="https://github.com/">GitHub</a>
+      <a href="CV.html">View Resume</a>
+      </div>
+    </div>
+   <body>s
+    <div class="container2">
+      <h3> <span style="color:red"> ACTIVELY LOOKING FOR A MACHINE LEARNING ROLE </span></h3><br><br><br>
+<div class="t">Having grown up a family of farmers I developed interest in observing the earth and prediction of environmental conditions to the most accurate as possible. Being in the field intersecting mathematics and computer engineering, and having spent time in business sectors, I will bring this set of skills to make the impactful move within you organization. I am actively lookig for Machine Learning Role, most preferable PhD position in developing solutions to make satelite imagery be more accessible and usable in industry
+Having grown up in the filed intersecting mathematics and computer engineering, and having spent time in business sectors, I will bring this set of skills to make the impactful move within you organization. My passion for understanding the power of data and its potential impact on business sets me apart. If you are looking for a dedicated and motivated individual who appreciates the strategic role of data, I would love to connect and discuss potential opportunities further</div></p><br><br>
+         <div class="container">
+        <h1>recent Projects</h1>
+        <!-- Project 1 -->
+        <div class="project">
+            <div class="image">
+                <img src="Images//positions_by_state.PNG">
+            </div>
+            <div class="details">
+                <h2>Project 1: Unveiling Patterns in French Weather and Electricity Consumption</h2>
+                <p>
+                    This data analysis project delves into the intricate relationship between historical daily weather data for France and its correlation with electricity consumption. Navigating through ten detailed steps, the analysis includes data retrieval, correlation matrix calculations, synchronization of time series, and the application of multivariate regression models.
+                </p>
+                <button onclick="location.href='projects.html'">Read More</button>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Project 2 -->
+        <div class="project">
+            <div class="image">
+                <img src="Images//dennis-kummer-52gEprMkp7M-unsplash.jpg">
+            </div>
+            <div class="details">
+                <h2>Project 2: Credit Card Segmentation and Prediction</h2>
+                <p>
+                    In this report, I present a comprehensive analysis of a Credit Card Segmentation and Prediction project. The context involves utilizing machine learning techniques to classify credit card users into distinct segments. The purpose is to develop a predictive model for segmenting credit card users based on their transactional patterns.
+                </p>
+                <button onclick="location.href='projects.html'">Read More</button>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Project 3 -->
+        <div class="project">
+            <div class="image">
+                <img src="Images//forward image.jpg">
+            </div>
+            <div class="details">
+                <h2>Project 3: Deep Analysis in Anomaly-Based Intrusion Detection and Prevention</h2>
+                <p>
+                    In this personal data science endeavor, I undertook a comprehensive analysis of the CICIDS2017 cybersecurity dataset, delving deep into the intricacies of Anomaly-Based Intrusion Detection and Prevention. This project aimed to enhance my data science proficiency by extracting meaningful insights from network traffic data and providing valuable perspectives for cybersecurity strategies.
+                </p>
+                <button onclick="location.href='projects.html'">Read More</button>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Project 4 -->
+        <div class="project">
+            <div class="image">
+                <img src="Images//weather.PNG">
+            </div>
+            <div class="details">
+                <h2>Project 4: Advanced Image Classification using Deep Learning Techniques</h2>
+                <p>
+                    This project focuses on leveraging deep learning algorithms to perform advanced image classification tasks. Using Convolutional Neural Networks (CNNs), I explored techniques to improve model accuracy and efficiency. The work involved preprocessing images, tuning hyperparameters, and deploying the model for real-world applications in healthcare and autonomous systems.
+                </p>
+                <button onclick="location.href='projects.html'">Read More</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+    <p>© Pierre <span id="currentYear"></span>
+    <script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+</script></p>
+</footer>
+
+
+</body>
+</html>
