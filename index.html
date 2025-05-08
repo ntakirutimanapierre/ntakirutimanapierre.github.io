@@ -144,9 +144,10 @@ nav a {
 }
 
 .details p {
-  line-height: 1.5;
+  line-height: 1.3;
   margin-bottom: 8px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 14px;
 }
 
 button {
@@ -177,11 +178,25 @@ button:hover {
   font-size: 16px;
 }
 
+.wrapper {
+  max-width: 1300px;  /* 👈 adjust width as needed */
+  margin: 0 auto;
+  background-color: #fff;  /* optional: give it a "paper" look */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); /* optional */
+}
+@media screen and (max-width: 600px) {
+  .wrapper {
+    padding: 20px;
+    margin: 20px;
+  }
+}
+
   </style>
 
 
 </head>
 <body>
+  <div class="wrapper">
   <header><nav>
    <b> <a href="">Pierre</a></b>
     </nav>
@@ -356,4 +371,6 @@ Having grown up in the filed intersecting mathematics and computer engineering, 
 
 
 </body>
+</div> <!-- closes .wrapper -->
+</div> <!-- closes .container -->
 </html>
