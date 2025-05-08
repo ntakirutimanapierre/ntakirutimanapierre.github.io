@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FINIA – Fintech Index Africa</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+    }
+    .wrapper {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: row;
+      max-width: 1300px;  /* 👈 adjust width as needed */
+    }
+    
+    .sidebar {
+      width: 240px;
+      background-color: #1e1e2f;
+      color: #fff;
+      padding: 20px;
+    }
+    .sidebar h2 {
+      margin-top: 0;
+        font-size: 50px;
+        font-size: large;
+    }
+    .sidebar nav a {
+      display: block;
+      color: #ccc;
+      text-decoration: none;
+      margin: 10px 0;
+    }
+    .sidebar nav a:hover {
+      color: #fff;
+    }
+    .main-content {
+      flex: 1;
+      padding: 40px;
+      background-color: #fff;
+    }
+    .main-content h1 {
+      margin-top: 0;
+    }
+    .main-content img {
+      width: 100%;
+      max-width: 600px;
+      margin: 20px 0;
+      border-radius: 6px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+    .footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #1e1e2f;
+      color: #ccc;
+    }
+    @media (max-width: 768px) {
+      .wrapper {
+        flex-direction: column;
+      }
+      .sidebar {
+        width: 100%;
+      }
+    }
+    .p {
+        font-size: 16px;
+        line-height: 1.7;
+        color: #333;
+        margin-bottom: 20px;
+        text-align: justify;
+        }
+    .h2 {
+        font-size: 13px;
+        line-height: 1.7;
+        color: #333;
+        margin-bottom: 20px;
+        text-align: justify;
+        }
+.image-row {
+  display: flex;
+  gap: 20px; /* space between images */
+  flex-wrap: wrap; /* allows stacking on smaller screens */
+  justify-content: center;
+}
+
+.image-row img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+</style>
+
+
+<body> 
+  <div class="wrapper">
+    <aside class="sidebar">
+      <h2>FINIA</h2>
+      <nav>
+        <a href="index.html">HOME</a>
+        <a href="#">Overview</a>
+        <a href="#">Metrics</a>
+        <a href="#">Sectors</a>
+        <a href="#">Reports</a>
+        <a href="https://github.com/ntakirutimanapierre/FINIA" target="_blank">GitHub</a>
+      </nav>
+    </aside>
+    <main class="main-content">
+      <h1>Fintech Index Africa (FINIA)</h1>
+      <p><strong>FINIA</strong> is a data-driven index designed to track and benchmark fintech performance across Sub-Saharan Africa. It aggregates data from multiple sources and provides key insights into the regional fintech ecosystem.
+        This project represents a comprehensive analysis of digital development and financial investment across African countries, integrating multiple development indicators to create a holistic understanding of the continent's digital landscape. The analysis spans from 2010 to 2024 and emphasizes major investment hubs like Nigeria, South Africa, Egypt, and Kenya.
+      </p>
+
+      <h2>Data Collection and Processing</h2>
+      <p>
+        Investment data from Crunchbase includes funding rounds, industries, and locations, showing wide disparities in funding across the continent. Nigeria tops the list with over $3.5B by 2024. Countries like Seychelles, Mauritius, and Togo, while smaller, show focused investment interest.
+      </p>
+
+      <h2>Key Development Indicators</h2>
+      <ul>
+        <li><strong>GSMA Mobile Connectivity Index:</strong> Covers infrastructure, affordability, readiness, and content availability. Top performers include South Africa, Mauritius, Egypt.</li>
+        <li><strong>Literacy Rates:</strong> Proxy for digital readiness. Seychelles and South Africa show rates above 90%, while Chad and Niger remain below 40%.</li>
+      </ul>
+      <h2>Dashboard Preview</h2>
+      <p>The FINIA index is a composite score derived from various metrics, including investment volume, GSMA scores, and literacy rates. It provides a comprehensive view of the fintech landscape in Sub-Saharan Africa.      
+    
+      <h2>Composite Index Development</h2>
+      <div class="image-row">
+        <img src="images/investment.png" alt="Chart 1">
+        <img src="images/gsmaindex.png" alt="Chart 2">
+        <img src="images/literacy.png" alt="Chart 2">
+      </div>
+
+      <p>
+        A normalized, composite index combines investment volumes, GSMA scores, and literacy rates to produce a balanced score for each country. In 2023, scores ranged from 0.36 (Mali) to 0.84 (Seychelles), revealing clear links between investment, infrastructure, and education.
+      </p>
+
+
+
+      <h2> Choropleth Maps Countries Performance on Sub-Indices and The Fintech Index Itself</h2>
+      <img src="images/africa_choropleth_maps_2x2.png" alt="Geospatial choropleth of Africa" />
+
+      <h2>Insights & Policy Relevance</h2>
+      <p>
+        FINIA provides insights for governments, investors, and NGOs to identify digital investment gaps and development needs. The post-COVID-19 era marks a sharp rise in digital investment—most notably in Nigeria, Egypt, and South Africa. This project helps visualize the link between financial capital and digital outcomes.
+      </p>
+
+      <h2>Explore the Code</h2>
+      <p>Access the source code and methodology on <a href="https://github.com/ntakirutimanapierre/FINIA" target="_blank">GitHub →</a></p>
+    </main>
+  </div>
+
+  <footer class="footer">
+    &copy; 2025 Pierre Ntakirutimana | FINIA Project
+  </footer>
+</body>
+</html>
