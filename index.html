@@ -190,7 +190,41 @@ button:hover {
     margin: 20px;
   }
 }
-
+.bump-button {
+      background-color: #004466;
+      color: white;
+      border: none;
+      padding: 5px 12px;
+      cursor: pointer;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 12px;
+      position: relative;
+      animation: bump 1.5s infinite;
+    }
+    
+    /* Live indicator dot - INCREASED SIZE */
+    .bump-button::after {
+      content: "";
+      position: absolute;
+      top: -4px;
+      right: -4px;
+      width: 15px;          /* Increased from 6px */
+      height: 15px;         /* Increased from 6px */
+      background-color: #FF4136;
+      border-radius: 50%;
+      box-shadow: 0 0 5px #FF4136;
+    }
+    
+    /* Bumping animation */
+    @keyframes bump {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.08);
+      }
+    }
   </style>
 
 
@@ -281,7 +315,7 @@ button:hover {
 
     <div class="main">
     <div class="container2">
-      <h2> <span style="color:red"> ACTIVELY LOOKING FOR A MACHINE LEARNING ROLE </span></h2>
+      <h2> <span style="color:red"> ACTIVELY LOOKING FOR A MACHINE LEARNING ROLE <button class="bump-button">LIVE</button> </span></h2>
 <div class="t">Having grown up a family of farmers I developed interest in observing the earth and prediction of environmental conditions to the most accurate as possible. Being in the field intersecting mathematics and computer engineering, and having spent time in business sectors, I will bring this set of skills to make the impactful move within you organization. I am actively lookig for Machine Learning Role, most preferable PhD position in developing solutions to make satelite imagery be more accessible and usable in industry
 Having grown up in the filed intersecting mathematics and computer engineering, and having spent time in business sectors, I will bring this set of skills to make the impactful move within you organization. My passion for understanding the power of data and its potential impact on business sets me apart. If you are looking for a dedicated and motivated individual who appreciates the strategic role of data, I would love to connect and discuss potential opportunities further</div></p><br><br>
 

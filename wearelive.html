@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .bump-button {
+      background-color: #004466;
+      color: white;
+      border: none;
+      padding: 5px 12px;
+      cursor: pointer;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 12px;
+      position: relative;
+      animation: bump 1.5s infinite;
+    }
+    
+    /* Live indicator dot - INCREASED SIZE */
+    .bump-button::after {
+      content: "";
+      position: absolute;
+      top: -4px;
+      right: -4px;
+      width: 15px;          /* Increased from 6px */
+      height: 15px;         /* Increased from 6px */
+      background-color: #FF4136;
+      border-radius: 50%;
+      box-shadow: 0 0 5px #FF4136;
+    }
+    
+    /* Bumping animation */
+    @keyframes bump {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.08);
+      }
+    }
+  </style>
+</head>
+<body>
+  <button class="bump-button">LIVE</button>
+</body>
+</html>
