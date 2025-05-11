@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHATBOT_APP Directory Structure</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        .tree {
+            font-size: 14px;
+            color: #333;
+            white-space: pre;
+            overflow-x: auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border: 1px solid #e9ecef;
+        }
+        
+        .folder {
+            color: #0066cc;
+            font-weight: bold;
+        }
+        
+        .file {
+            color: #333;
+        }
+        
+        .file-description {
+            color: #666;
+            padding-left: 20px;
+        }
+        
+        .model-file {
+            color: #28a745;
+        }
+        
+        .js-file {
+            color: #f7df1e;
+        }
+        
+        .css-file {
+            color: #264de4;
+        }
+        
+        .html-file {
+            color: #e34f26;
+        }
+        
+        .python-file {
+            color: #3776ab;
+        }
+        
+        .csv-file {
+            color: #ff6b6b;
+        }
+        
+        .config-file {
+            color: #795548;
+        }
+        
+        .image-file {
+            color: #9c27b0;
+        }
+        
+        .legend {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border: 1px solid #e9ecef;
+        }
+        
+        .legend h3 {
+            margin-top: 0;
+            color: #333;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        .legend-item {
+            display: inline-block;
+            margin: 5px 10px;
+            padding: 3px 6px;
+            border-radius: 3px;
+            font-size: 12px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            .tree {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CHATBOT_APP Directory Structure</h1>
+        
+        <div class="tree"><span class="folder">CHATBOT_APP/</span>
+│
+├── <span class="folder">model/</span>
+│   ├── <span class="file model-file">rf_model.joblib</span>              <span class="file-description"># Trained Random Forest model</span>
+│   ├── <span class="file model-file">scaler.joblib</span>                <span class="file-description"># Scaler for feature standardization</span>
+│   ├── <span class="file python-file">train.py</span>                     <span class="file-description"># Script for training the model</span>
+│   ├── <span class="file csv-file">Student_performance.csv</span>        <span class="file-description"># Dataset for training</span>
+│
+├── <span class="folder">static/</span>
+│   ├── <span class="folder">JS/</span>
+│   │   ├── <span class="file js-file">chat.js</span>                  <span class="file-description"># Frontend JavaScript for chatbot</span>
+│   ├── <span class="file css-file">styles.css</span>                   <span class="file-description"># CSS for styling the web app</span>
+│   ├── <span class="file image-file">title-university-logo.png</span>    <span class="file-description"># Branding assets</span>
+│   ├── <span class="file image-file">university-logo.png</span>          <span class="file-description"># Branding assets</span>
+│
+├── <span class="folder">templates/</span>
+│   ├── <span class="file html-file">chat.html</span>                    <span class="file-description"># HTML for the web app</span>
+│
+├── <span class="file python-file">app.py</span>                           <span class="file-description"># Main Flask app</span>
+├── <span class="file config-file">Procfile</span>                         <span class="file-description"># Heroku/Railway deployment configuration</span>
+├── <span class="file config-file">requirements.txt</span>                 <span class="file-description"># Dependencies for the project</span>
+├── <span class="file config-file">.gitignore</span>                       <span class="file-description"># Files to ignore in Git</span>
+</div>
+        
+        <div class="legend">
+            <h3>File Type Legend</h3>
+            <span class="legend-item folder">📁 Folder</span>
+            <span class="legend-item file python-file">🐍 Python</span>
+            <span class="legend-item file model-file">🤖 Model</span>
+            <span class="legend-item file js-file">📜 JavaScript</span>
+            <span class="legend-item file css-file">🎨 CSS</span>
+            <span class="legend-item file html-file">📄 HTML</span>
+            <span class="legend-item file csv-file">📊 CSV</span>
+            <span class="legend-item file config-file">⚙️ Config</span>
+            <span class="legend-item file image-file">🖼️ Image</span>
+        </div>
+    </div>
+</body>
+</html>

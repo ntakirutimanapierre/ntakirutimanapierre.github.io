@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"/> -->
   <title>Student Success AI Assistant – Dropout Prevention</title>
   <style>
     body {
@@ -36,7 +36,7 @@
         line-height: 1.7;
         color: #333;
         text-align: justify;
-        margin-bottom: 20px;
+        margin-bottom: 2px;
         }
 
     p1 {
@@ -44,12 +44,12 @@
         line-height: 1.7;
         color: #f4f0f0;
         text-align: justify;
-        margin-bottom: 20px;
+        margin-bottom: 2px;
         }
 
     section {
       padding: 20px;
-      border-bottom: 1px solid #eee;
+      border-bottom: 0px solid #eee;
     }
     img.inline-img {
       display: block;
@@ -69,9 +69,6 @@
       color: #0073b1;
       text-decoration: none;
     }
-    a:hover {
-      text-decoration: none;
-    }
     nav a {
         color: #fff;
         text-decoration: none;
@@ -79,22 +76,131 @@
         font-size: 16px;
         text-align: right;
         }
+
+        
+    .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        .tree {
+            font-size: 14px;
+            color: #333;
+            white-space: pre;
+            overflow-x: auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border: 1px solid #e9ecef;
+        }
+        
+        .folder {
+            color: #0066cc;
+            font-weight: bold;
+        }
+        
+        .file {
+            color: #333;
+        }
+        
+        .file-description {
+            color: #666;
+            padding-left: 20px;
+        }
+        
+        .model-file {
+            color: #28a745;
+        }
+        
+        .js-file {
+            color: #f7df1e;
+        }
+        
+        .css-file {
+            color: #264de4;
+        }
+        
+        .html-file {
+            color: #e34f26;
+        }
+        
+        .python-file {
+            color: #3776ab;
+        }
+        
+        .csv-file {
+            color: #ff6b6b;
+        }
+        
+        .config-file {
+            color: #795548;
+        }
+        
+        .image-file {
+            color: #9c27b0;
+        }
+        
+        .legend {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border: 1px solid #e9ecef;
+        }
+        
+        .legend h3 {
+            margin-top: 0;
+            color: #333;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        .legend-item {
+            display: inline-block;
+            margin: 5px 10px;
+            padding: 3px 6px;
+            border-radius: 3px;
+            font-size: 12px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            .tree {
+                font-size: 12px;
+            }
+        }
   </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   
 
-<body>
 
-  <div class="container">
+
+
+
+<body> 
+<div class="container">
     <header>
         <h1> <a href="index.html">HOME</h1>
       <h1>Student Success AI Assistant</h1>
       <p1><strong>Authors:</strong> Lujain Al Mansoori, Mohammad Annan, Julie Negussie, Pierre Ntakirutimana, Aiyana Rockwell</p1>
-
-
+      
+      <span class="date">Date: 2023-10-20</span>
       <p1><strong>Course:</strong> AI & Emerging Economies, Carnegie Mellon University | Prof. Ganesh Mani</p1>
     </header>
 
-    <section>
+<section>
       <h2>ABSTRACT</h2>
       <p>
         
@@ -106,9 +212,9 @@
          Ultimately, this AI-powered solution aims to significantly reduce dropout rates, improve student outcomes, and contribute to broader economic
           development in emerging economies.
       </p>
-    </section>
+</section>
 
-    <section>
+<section>
       <h2> INTRODUCTION AND PROBLEM AREA</h2>
       <p>
 
@@ -118,9 +224,9 @@
             Artificial intelligence (AI) offers promising solutions to address this critical issue in higher education institutions. By leveraging algorithms and a robust dataset, AI-powered systems have the ability to analyze and parse out useful factors to predict student success and identify risks of dropping out with a high degree of accuracy (Kalegele, 2020). These predictive models can consider a wide range of variables, including demographic information, previous academic background, GDP of the country, tuition, etc and in turn provide a comprehensive assessment of each student’s likelihood of success. By harnessing the power of AI, our team produced a system that universities in emerging economies can use to significantly reduce student dropout rates, improve student outcomes, and contribute to broader economic development.  
         
       </p>
-    </section>
+</section>
 
-    <section>
+<section>
       <h2>LITERATURE REVIEW, RELATED WORK AND RESEARCH GAP</h2>
       <p>
         As aforementioned, our area of concern is the educational sector. For us to propose a system that provides users with personalized feedback and offers actionable recommendations, we must investigate and analyze previous literature and related works. This allows the development of a solution upon a stable foundation. 
@@ -131,9 +237,9 @@
         With this, the application of AI in higher education, particularly in the admissions process, has gained significant attention, however, there is limited literature concerning student dropout rates and improving retention rates in universities (Chassignol et al., 2018). As demonstrated, there exists a gap in the literature when it comes to using AI to address student dropout rates, and this gap is exacerbated in the context of emerging economies, where a lack of research or proposed solutions for dropout rates are proposed in the context of emerging markets. To fill this gap, we plan to use the existing literature to support our research goals and create a system that emphasizes transparency and ease of use, importantly addressing dropout rates in the context of emerging economies through identifying at-risk students and providing recommendations related to these markets. 
         .
       </p>
-    </section>
+</section>
 
-    <section>
+<section>
       <h2>Solution Overview</h2>
       <p>
         Our assistant takes student inputs, predicts risk, and communicates results through a chat interface using OpenAI’s GPT model.
@@ -141,63 +247,102 @@
         The system is built to ensure equity, explainability, and student empowerment.
       </p>
       <img class="inline-img" src="images/droupoutImage.png" alt="Solution overview diagram">
-    </section>
+</section>
 
-    <section>
+<section>
       <h2>Architecture</h2>
       <p>
         We designed a web application using Python (Flask), HTML/JavaScript, and OpenAI's GPT API. It connects frontend inputs to backend
         machine learning logic and language response generation.
-      </p>
-      <img class="inline-img" src="images/archtecture.png" alt="System architecture diagram">
-    </section>
+      
+<h1>CHATBOT_APP Directory Structure</h1>
+        
+<div class="tree"><span class="folder">CHATBOT_APP/</span>
+│
+├── <span class="folder">model/</span>
+│   ├── <span class="file model-file">rf_model.joblib</span>              <span class="file-description"># Trained Random Forest model</span>
+│   ├── <span class="file model-file">scaler.joblib</span>                <span class="file-description"># Scaler for feature standardization</span>
+│   ├── <span class="file python-file">train.py</span>                     <span class="file-description"># Script for training the model</span>
+│   ├── <span class="file csv-file">Student_performance.csv</span>        <span class="file-description"># Dataset for training</span>
+│
+├── <span class="folder">static/</span>
+│   ├── <span class="folder">JS/</span>
+│   │   ├── <span class="file js-file">chat.js</span>                  <span class="file-description"># Frontend JavaScript for chatbot</span>
+│   ├── <span class="file css-file">styles.css</span>                   <span class="file-description"># CSS for styling the web app</span>
+│   ├── <span class="file image-file">title-university-logo.png</span>    <span class="file-description"># Branding assets</span>
+│   ├── <span class="file image-file">university-logo.png</span>          <span class="file-description"># Branding assets</span>
+│
+├── <span class="folder">templates/</span>
+│   ├── <span class="file html-file">chat.html</span>                    <span class="file-description"># HTML for the web app</span>
+│
+├── <span class="file python-file">app.py</span>                           <span class="file-description"># Main Flask app</span>
+├── <span class="file config-file">Procfile</span>                         <span class="file-description"># Heroku/Railway deployment configuration</span>
+├── <span class="file config-file">requirements.txt</span>                 <span class="file-description"># Dependencies for the project</span>
+├── <span class="file config-file">.gitignore</span>                       <span class="file-description"># Files to ignore in Git</span>
+</div>
+      
+      <div class="legend">
+          <h3>File Type Legend</h3>
+          <span class="legend-item folder">📁 Folder</span>
+          <span class="legend-item file python-file">🐍 Python</span>
+          <span class="legend-item file model-file">🤖 Model</span>
+          <span class="legend-item file js-file">📜 JavaScript</span>
+          <span class="legend-item file css-file">🎨 CSS</span>
+          <span class="legend-item file html-file">📄 HTML</span>
+          <span class="legend-item file csv-file">📊 CSV</span>
+          <span class="legend-item file config-file">⚙️ Config</span>
+          <span class="legend-item file image-file">🖼️ Image</span>
+      </div>
+    </p>
+</section>
 
-    <section>
+<section>
       <h2>Data</h2>
       <p>
         We used a dataset from Kaggle with 16 student attributes including age, GPA, socioeconomic status, academic history, and dropout label.
         We encoded categorical variables, handled class imbalance using SMOTE, and used PCA for dimensionality reduction.
       </p>
-    </section>
+</section>
 
-    <section>
+<section>
       <h2>Model Training & Evaluation</h2>
       <p>
         We evaluated Logistic Regression, KNN, Random Forest, SVM, and Artificial Neural Networks (ANN). Random Forest gave the best F1 score
         and AUC (93%). ANN and SVM followed closely. Our evaluation criteria included recall, precision, accuracy, and specificity.
       </p>
+      
       <img class="inline-img" src="images/droup_table.png" alt="Model performance chart">
-    </section>
+</section>
 
-    <section>
+<section>
       <h2>LLM Integration</h2>
       <p>
         We used OpenAI’s API to generate feedback based on predictions. For students at risk, the assistant provides supportive advice tailored
         to input features (e.g., low GPA or high workload). The LLM is instructed to use encouraging, culturally sensitive language.
       </p>
-    </section>
+</section>
 
-    <section>
+<section>
       <h2>Risks and Mitigation</h2>
       <ul>
         <li>Bias: Balanced dataset and cross-validation to ensure fairness</li>
         <li>Privacy: Minimal inputs, local processing, and no PII</li>
         <li>Misuse: Guidance is advisory, not deterministic</li>
       </ul>
-    </section>
+</section>
 
-    <section>
+<section>
       <h2>Impact</h2>
       <p>
         Our system enables institutions in emerging economies to deploy an affordable, scalable AI advisor. This supports human development goals,
         reduces dropout, and improves retention. It is especially useful in countries where student services are under-resourced.
       </p>
-    </section>
+</section>
 
-    <section>
+<section>
       <h2>Repository</h2>
       <p>View the full code and documentation on <a href="https://github.com/mbfannan/Dropout-Prevention">GitHub →</a></p>
-    </section>
+</section>
 
     <footer>
       &copy; Pierre2025
@@ -229,7 +374,7 @@
         </span></a>
         
         
-        <a href="https://github.com/ntakirutimanapierre?tab=repositories" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
+        <a href="https://github.com/mbfannan/Dropout-Prevention" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
             <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
             <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
         </svg>
