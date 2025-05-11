@@ -175,6 +175,45 @@
                 font-size: 12px;
             }
         }
+        /* Container for side-by-side layout */
+      .model-section {
+          display: flex;
+          align-items: center;
+          gap: 30px;
+          padding: 20px;
+      }
+
+      /* Text content on the left */
+      .model-text {
+          flex: 1;
+          padding-right: 20px;
+      }
+
+      /* Image on the right */
+      .model-image {
+          flex: 1;
+          text-align: center;
+      }
+
+      /* Ensure the image fits properly */
+      .model-image img {
+          max-width: 100%;
+          height: auto;
+          border-radius: 6px;
+          box-shadow: 0 0 6px rgba(0,0,0,0.1);
+      }
+
+      /* Make responsive for smaller screens */
+      @media (max-width: 768px) {
+          .model-section {
+              flex-direction: column;
+              gap: 20px;
+          }
+          
+          .model-text {
+              padding-right: 0;
+          }
+      }
   </style>
    
 
@@ -293,15 +332,23 @@ machine learning logic and language response generation.
       </p>
 </section>
 
-<section>
-      <h2>Model Training & Evaluation</h2>
+
+
+<!-- The following section is for model training and evaluation -->
+<section class="model-section" style="align-content: center;">
+  
+  <div class="model-text">
+    <h2>Model Training & Evaluation</h2>   
       <p>
-        We evaluated Logistic Regression, KNN, Random Forest, SVM, and Artificial Neural Networks (ANN). Random Forest gave the best F1 score
-        and AUC (93%). ANN and SVM followed closely. Our evaluation criteria included recall, precision, accuracy, and specificity.
+          We evaluated Logistic Regression, KNN, Random Forest, SVM, and Artificial Neural Networks (ANN). Random Forest gave the best F1 score
+          and AUC (93%). ANN and SVM followed closely. Our evaluation criteria included recall, precision, accuracy, and specificity.
       </p>
-      
-      <img class="inline-img" src="images/droup_table.png" alt="Model performance chart">
+  </div>
+  <div class="model-image">
+      <img src="images/droup_table.png" alt="Model performance chart">
+  </div>
 </section>
+
 
 <section>
       <h2>LLM Integration</h2>
@@ -309,6 +356,7 @@ machine learning logic and language response generation.
         We used OpenAI’s API to generate feedback based on predictions. For students at risk, the assistant provides supportive advice tailored
         to input features (e.g., low GPA or high workload). The LLM is instructed to use encouraging, culturally sensitive language.
       </p>
+      <img class="inline-img" src="images/IMAGESLLM.png" alt="LLM integration diagram">
 </section>
 
 <section>
@@ -337,6 +385,15 @@ machine learning logic and language response generation.
       </p>
 </section>
 
+
+
+
+
+
+
+
+
+<!--THE CODES SHOW THE FOOTER-->
 <section>
       <h2>Repository</h2>
       <p>View the full code and documentation on <a href="https://github.com/mbfannan/Dropout-Prevention" class="external-link">GitHub →</a></p>
